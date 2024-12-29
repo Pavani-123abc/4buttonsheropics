@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* border: 2px black solid; */
+    }
+    img{
+        border: 2px black solid 
+        
+    }
+    #buttons{
+        display: flex;
+        flex-direction:row;
+        align-items: center;
+        justify-content: center;
+        gap:20px;
+        #b1{
+            width: 150px;
+            height: 50px;
+            font-size: 25px;
+            border-radius: 10px;
+            color: black;
+            background: yellow;
+        }
+    }
+</style>
+<body>
+    <h1>Heros photos</h1>
+    <img src="">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfzWF6oGUuXh6RDDNnteRFROZiK5ekwiL5Dw&s" id="image"  height="500px" width="650px" onclick="toggle();"><br>
+    <div id="buttons">
+    <button id="b1" onclick="toggle('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvgJ9gqCeUu3JstrYHuWSTxFNoKHF3ZJ85vQ&s');">Prabhas</button>
+    <button id="b1" onclick="toggle('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHY0cQE1tz7AL3436l5YQQRU4JDbfWdRi-tA&s');">Alluarjun</button>
+    <button id="b1" onclick="toggle('https://tse3.mm.bing.net/th?id=OIP.WC2w7Ui4Gfc0vncEH7S5MQHaLh&pid=Api&P=0&h=180');">Raviteja</button>
+    <button id="b1" onclick="toggle('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdKHByziLilTfzYTOVfvkOZ_EIdRaun1Kw1Q&s');">Ramcharan</button>
+    </div>
+    <script>
+        function toggle(value){
+           let s1=document.getElementById("image");
+           s1.src=value;
+        
+        }
+    </script>
+</body>
+</html>
